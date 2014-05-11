@@ -1,0 +1,15 @@
+Installation steps:
+
+- mkdir paris
+- git clone
+- virtualenv env
+- pip install django
+- django-admin.py startproject paris
+- cd paris
+- python manage.py runserver
+- On your browser, type: 127.0.0.1:8000
+
+/!\ Careful about the versions !
+Use e.g. django 1.6 with Python 2.7
+
+- To use a Python shell use : python manage.py shell (to have access to the local settings)
