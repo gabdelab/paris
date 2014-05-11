@@ -13,3 +13,5 @@ Installation steps:
 Use e.g. django 1.6 with Python 2.7
 
 - To use a Python shell use : python manage.py shell (to have access to the local settings)
+
+- python manage.py sql top14
