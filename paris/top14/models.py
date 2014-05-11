@@ -14,5 +14,5 @@ class Match(models.Model):
 
 class Result(models.Model):
 
-  homeTeamPoints = models.PositiveSmallIntegerField(default=0)
-  awayTeamPoints = models.PositiveSmallIntegerField(default=0)
+  homeTeamPoints = models.IntegerField(default=0)
+  awayTeamPoints = models.IntegerField(default=0)
