@@ -2,10 +2,12 @@ Installation steps:
 
 - mkdir paris
 - git clone
+- on Mac: easy_install virtualenv
 - virtualenv env
+- source env/bin/activate
 - pip install django
-- django-admin.py startproject paris
 - cd paris
+- python manage.py syncdb
 - python manage.py runserver
 - On your browser, type: 127.0.0.1:8000
 
