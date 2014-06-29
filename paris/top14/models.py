@@ -15,3 +15,13 @@ class Match(models.Model):
   awayTeam = models.ForeignKey(Team, related_name='awayTeam')
   homeTeamPoints = models.IntegerField(default=0)
   awayTeamPoints = models.IntegerField(default=0)
+
+
+class Player(models.Model):
+
+  name = models.CharField(max_length=30)
+  points = models.IntegerField(default=0)
+  
+  def __str__(self):
+  	return self.name
+  	
