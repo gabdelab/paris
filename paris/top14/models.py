@@ -21,7 +21,12 @@ class Player(models.Model):
 
   name = models.CharField(max_length=30)
   points = models.IntegerField(default=0)
-  
+
   def __str__(self):
   	return self.name
-  	
+
+
+class Bet(models.Model):
+
+  player = models.ForeignKey(Player, related_name='player')
+  match = models.ForeignKey(Match, related_name='match')
